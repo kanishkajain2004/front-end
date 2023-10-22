@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Gym</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<style>
+    body {
+        font-family: 'Oswald', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('gym1.jpg');
+        background-repeat: no-repeat;
+        background-size: 2600px 1200px;
+
+
+    }
+
+    .left {
+        /* border: 2px solid white; */
+        display: inline-block;
+        position: absolute;
+        left: 30px;
+        top: 20px;
+        font-weight: bold;
+
+    }
+
+    .centre {
+        /* border: 2px solid white; */
+        display: block;
+        width: 35%;
+        margin: 20px auto;
+    }
+
+    .right {
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        /* border: 2px solid white; */
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 23px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 35px 22px;
+    }
+
+    .navbar li a:hover {
+
+        text-decoration: underline;
+        color: rgb(185, 181, 181);
+    }
+
+    .left img {
+        width: 86px;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .btn {
+        background-color: black;
+        color: white;
+        margin: 0px 10px;
+        padding: 5px 15px;
+        border: 2px solid white;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 23px;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .btn:hover {
+        background-color: rgb(67, 63, 63);
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 123px auto;
+        padding: 20px 23px;
+        border-radius: 10px;
+        width: 31%;
+        display: block;
+
+    }
+
+    .container h3 {
+        text-align: center;
+    }
+
+    .container button {
+
+        width: 73%;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .form-group input {
+
+        color: black;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        margin: 6px auto;
+        padding: 5px;
+        width: 470px;
+        border: 2px solid black;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    .boxes {
+        border: 2px solid white;
+        margin: 50px;
+        height: 250px;
+        width: 30%;
+    }
+
+    .container1 {
+        border: 2px solid white;
+        width: 70%;
+        margin: auto;
+        height: 400px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+   
+    
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div>My Fitness</div>
+
+        </div>
+
+        <!-- centre box for navbar -->
+        <div class="centre">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Other</a></li>
+            </ul>
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Feedback</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3>Join Now</h3>
+        <form action="noaction.php">
+            <div class="form-group"><input type="text" placeholder="Enter Your Name"></div>
+            <div class="form-group"><input type="text" placeholder="Enter Your Age"></div>
+            <div class="form-group"><input type="text" placeholder="Enter Your Gender"></div>
+            <div class="form-group"><input type="number" placeholder="Enter Your Phone Number"></div>
+            <div class="form-group"><input type="text" placeholder="Enter Your Address"></div>
+            <button class="btn">Submit</button>
+            <button class="btn" type="reset">Reset</button>
+        </form>
+    </div>
+    
+      
+
+</body>
+
+</html>
